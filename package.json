@@ -1,0 +1,54 @@
+{
+  "name": "@artistbabuvarghese/cloudinary-manager",
+  "version": "0.1.0",
+  "description": "Cloudinary manager wrapper for upload, folder management, and asset organization",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src",
+    "test": "vitest",
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "yarn build"
+  },
+  "keywords": [
+    "cloudinary",
+    "image-upload",
+    "video-upload",
+    "media-management",
+    "asset-management",
+    "folder-management"
+  ],
+  "author": "Albin Jose",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajnaduvil/cloudinary-manager.git"
+  },
+  "dependencies": {
+    "cloudinary": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "tsup": "^8.0.0",
+    "typescript": "~5.8.3",
+    "vitest": "^3.2.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
+
